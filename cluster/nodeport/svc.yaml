@@ -1,0 +1,10 @@
+kind: Service
+metadata:
+  name: nodeport-svc
+spec:
+  type: Nodeport
+  selector:
+    app: test-1
+  ports:
+      port: 80
+      nodePort: 30007
